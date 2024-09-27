@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> prototype </title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body>
+    <div class="head">
+
+    </div>
+    <!--This will be the header of the webpage-->
+    <div class="input-box">
+        <i class="uil uil-search"></i>
+        <input type="text">
+        <button class="button">Search</button>
+    </div>
+    
+    <script>
+        const button = document.querySelector(".button")
+        button.addEventListener("mousedown",()=> button.classList.add("clicked"))
+        button.addEventListener("mouseup",()=> button.classList.remove("clicked"))
+    </script>
+</body>
+
+</html>
