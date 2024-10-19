@@ -1,9 +1,3 @@
-public class Main {
-    public static void main(String[] args) {
-        new Website();
-    }
-}
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -11,8 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 
+public class Main {
+    public static void main(String[] args) {
+        new Website();
+    }
+}
 
-public class Website extends JFrame implements ActionListener {
+class Website extends JFrame implements ActionListener {
     JToggleButton jCPU_Button, jGPU_Button, jMotherboard_Button,
             jRAM_Button, jPSU_Button, jCooling_Button,
             jHDD_Button, jSSD_Button, jPCCase_Button;
@@ -105,7 +104,7 @@ public class Website extends JFrame implements ActionListener {
                 jGPU_Button.setForeground(Color.BLUE);
             } else {
                 jGPU_Button.setForeground(Color.BLACK);
-            };
+            }
             jGPU_Check_Text.setVisible(jGPU_Button.isSelected());
             System.out.println("GPU toggled: " + jGPU_Button.isSelected());
         }
